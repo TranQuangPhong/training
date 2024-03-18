@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: hello-service-2
+  cloud:
+    config:
+      discovery:
+        enabled: true
+  config:
+    import: "optional:configserver:http://localhost:8085/, optional:configserver:http://localhost:8086/"
+#      cloud: #Old cloud version
+#        config:
+#          uri: http://localhost:8085/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

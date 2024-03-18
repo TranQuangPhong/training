@@ -1,0 +1,19 @@
+
+x
+java:S1488"]Immediately return this expression instead of assigning it to the temporary variable "token".(ş½È’øÿÿÿÿ
+q	java:S116"WRename this field "TOKEN_SECRET" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Éô´ÿÿÿÿÿ
+q	java:S116"WRename this field "TOKEN_EXPIRE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•ù¥ıÿÿÿÿ
+<
+java:S1170"!Make this final field static too.(¢Éô´ÿÿÿÿÿ
+<
+java:S1170"!Make this final field static too.(•ù¥ıÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(Ö¼ÓÃ
+x
+java:S1488"]Immediately return this expression instead of assigning it to the temporary variable "token".(ş½È’øÿÿÿÿ
+q	java:S116"WRename this field "TOKEN_SECRET" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Éô´ÿÿÿÿÿ
+q	java:S116"WRename this field "TOKEN_EXPIRE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•ù¥ıÿÿÿÿ
+<
+java:S1170"!Make this final field static too.(¢Éô´ÿÿÿÿÿ
+<
+java:S1170"!Make this final field static too.(•ù¥ıÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(Ö¼ÓÃ

@@ -1,0 +1,64 @@
+syntax = 'proto3';
+
+option java_multiple_files = true;
+package sungroup.tms.grpc.overtime.workingtime;
+
+//request to get overtime requests by date
+message OvertimeDeclareDateRequest {
+  string overtimeDate = 1;
+}
+//response
+message EmployeeOvertimeInfoPerDayResult {
+  repeated EmployeeOvertimeInfo employeeOvertimeInfos = 1;
+}
+
+message EmployeeOvertimeInfo {
+  string employeeCode = 1;
+  string overtimeDeclareDate = 2;
+  repeated OvertimeRequestTimeModel overtimeRequestsRangeTime = 3;
+}
+
+message OvertimeRequestTimeModel {
+  int64 overtimeId = 1;
+  string startTime = 2;
+  string endTime = 3;
+  string startBreakTime = 4;
+  string endBreakTime = 5;
+}
+
+message TimeRequestModel {
+  string date = 1;
+  string time = 2;
+}
+
+
+
+//request to update actual overtime check-ins
+message EmployeeActualTimesRequest {
+  repeated UpdateActualWorkingTimeRequest updateActualWorkingTimeRequest = 1;
+}
+
+//response
+message UpdateActualWorkingTimeResult {
+  string message = 1;
+}
+
+message UpdateActualWorkingTimeRequest {
+  string employeeCode = 1;
+  string overtimeDeclareDate = 2;
+  repeated UpdateActualOvertimeModel actualOvertimeRequestRangesTime = 3;
+}
+
+message UpdateActualOvertimeModel {
+  int64 overtimeId = 1;
+  string actualStartTime = 2;
+  string actualEndTime = 3;
+  string actualStartBreakTime = 4;
+  string actualEndBreakTime = 5;
+}
+
+//Services
+service OvertimeService {
+  rpc getEmployeeOvertimeInfoPerDay(OvertimeDeclareDateRequest) returns (EmployeeOvertimeInfoPerDayResult){};
+  rpc updateActualRequestOvertimePerDay(EmployeeActualTimesRequest) returns (UpdateActualWorkingTimeResult){};
+}

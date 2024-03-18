@@ -1,0 +1,13 @@
+C:\Users\tranquangphong\IdeaProjects\hellomicroservices\Springboot_hello_micro_zuul_gateway\src\main\java\com\auth\controller\SecurityController.java
+C:\Users\tranquangphong\IdeaProjects\hellomicroservices\Springboot_hello_micro_zuul_gateway\src\main\java\com\auth\configuration\SecurityConfiguration.java
+C:\Users\tranquangphong\IdeaProjects\hellomicroservices\Springboot_hello_micro_zuul_gateway\src\main\java\com\auth\model\CustomUser.java
+C:\Users\tranquangphong\IdeaProjects\hellomicroservices\Springboot_hello_micro_zuul_gateway\src\main\java\com\auth\repo\UserRepo.java
+C:\Users\tranquangphong\IdeaProjects\hellomicroservices\Springboot_hello_micro_zuul_gateway\src\main\java\com\auth\service\CustomUserDetailsService.java
+C:\Users\tranquangphong\IdeaProjects\hellomicroservices\Springboot_hello_micro_zuul_gateway\src\main\java\com\auth\Utils.java
+C:\Users\tranquangphong\IdeaProjects\hellomicroservices\Springboot_hello_micro_zuul_gateway\src\main\java\com\ZuulGateWayApplication.java
+C:\Users\tranquangphong\IdeaProjects\hellomicroservices\Springboot_hello_micro_zuul_gateway\src\main\java\com\auth\model\CustomUserDetails.java
+C:\Users\tranquangphong\IdeaProjects\hellomicroservices\Springboot_hello_micro_zuul_gateway\src\main\java\com\auth\jwt\JwtProvider.java
+C:\Users\tranquangphong\IdeaProjects\hellomicroservices\Springboot_hello_micro_zuul_gateway\src\main\java\com\auth\jwt\JwtFilter.java
+C:\Users\tranquangphong\IdeaProjects\hellomicroservices\Springboot_hello_micro_zuul_gateway\src\main\java\com\auth\service\CustomUserRequestService.java
+C:\Users\tranquangphong\IdeaProjects\hellomicroservices\Springboot_hello_micro_zuul_gateway\src\main\java\com\auth\model\CustomUserRequest.java
+C:\Users\tranquangphong\IdeaProjects\hellomicroservices\Springboot_hello_micro_zuul_gateway\src\main\java\com\auth\model\CustomUserResponse.java

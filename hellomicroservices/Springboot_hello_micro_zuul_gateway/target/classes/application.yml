@@ -1,0 +1,34 @@
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+
+zuul:
+  routes:
+    hello-service-1:
+      path: /hello-service-1/**
+      service-id: hello-service-1
+#      url: http://hello-service-1
+    hello-service-2:
+      path: /hello-service-2/**
+      service-id: hello-service-2
+#      url: http://localhost:8082
+    hello-service-3:
+      path: /hello-service-3/**
+#      url: http://localhost:8083
+      service-id: hello-service-3
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/db_hello
+    username: phong
+    password: phong
+    driver-class-name: com.mysql.jdbc.Driver
+
+#jwt:
+#  secret: abcde
+#  expiration: 604800000

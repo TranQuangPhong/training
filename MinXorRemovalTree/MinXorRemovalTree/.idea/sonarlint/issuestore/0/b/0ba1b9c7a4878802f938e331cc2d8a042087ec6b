@@ -1,0 +1,19 @@
+
+>
+java:S1604"(Make this anonymous inner class a lambda(“ÓþÖ
+S	java:S106	"9Replace this use of System.out or System.err by a logger.(ÝüÍ¬øÿÿÿÿ
+O
+java:S1854+"9Remove this useless assignment to local variable "score".(’§Ñþ
+e
+java:S1659"JDeclare "xor1Downwards" and all following declarations on a separate line.(ƒŸ¸‹ÿÿÿÿÿ
+W
+java:S1659"ADeclare "xor2" and all following declarations on a separate line.(Ïêèö
+N	java:S106="9Replace this use of System.out or System.err by a logger.(ÒØ¢µ
+V	java:S125:"<This block of commented-out lines of code should be removed.(–ÆÙÿÿÿÿÿ
+S	java:S106>"9Replace this use of System.out or System.err by a logger.(è¹¦˜ûÿÿÿÿ
+S	java:S106?"9Replace this use of System.out or System.err by a logger.(Í´Áìøÿÿÿÿ
+S	java:S106@"9Replace this use of System.out or System.err by a logger.(Ï˜•ÿúÿÿÿÿ
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(¼¢¸€þÿÿÿÿ
+S	java:S106B"9Replace this use of System.out or System.err by a logger.(ºŸâÕþÿÿÿÿ
+P	java:S125K"<This block of commented-out lines of code should be removed.(˜ö
+]	java:S125U"<This block of commented-out lines of code should be removed.(–ÆÙÿÿÿÿÿ8•Ô±©©1

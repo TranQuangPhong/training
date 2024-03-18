@@ -1,0 +1,4 @@
+INSERT INTO time_management(id,created_at,created_by,updated_at,updated_by,date,end_break_time,first_entry_time,last_leave_time,staff_id,start_break_time,status)
+VALUES
+('1','2022-07-31','phongtq3','2022-07-31','phongtq3','2022-07-31','19:52:25.74487',NULL,'19:52:25.74487','staff_2','19:52:25.74487','True'),
+('2','2022-07-31','phongtq3','2022-07-31','phongtq3','2022-07-31',NULL,NULL,'19:52:25.74487','tiếng việt',NULL,'False');

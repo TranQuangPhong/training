@@ -1,0 +1,8 @@
+com\controller\ServiceToServiceController.class
+com\ServiceOneApplication.class
+com\configuration\CommonConfiuration.class
+com\model\ResponseObject.class
+com\repo\IDataRepository.class
+com\service\DataService.class
+com\model\DataModel.class
+com\configuration\properties\ConfigServerProperties.class

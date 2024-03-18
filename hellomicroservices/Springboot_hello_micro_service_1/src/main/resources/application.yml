@@ -1,0 +1,18 @@
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+#spring:
+#  cloud:
+#    config:
+#      uri: http://localhost:8085
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/db_hello
+    username: phong
+    password: phong
+    driver-class-name: com.mysql.jdbc.Driver

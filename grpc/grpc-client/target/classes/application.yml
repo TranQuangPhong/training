@@ -1,0 +1,8 @@
+server:
+  port: 8081
+
+grpc:
+  client:
+    grpc-get-data-1:
+      address: localhost:8082
+      negotiationType: plaintext
