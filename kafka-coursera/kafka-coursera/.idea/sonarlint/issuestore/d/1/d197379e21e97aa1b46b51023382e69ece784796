@@ -1,6 +1,0 @@
-
-l
-java:S2095$"JUse try-with-resources or close this "KafkaStreams" in a "finally" clause.(×Üß“úÿÿÿÿ8áÒ±îã1
-[
-java:S1612"@Replace this lambda with method reference 'String::toLowerCase'.(ºéÀ¥úÿÿÿÿ
-S	java:S106'"9Replace this use of System.out or System.err by a logger.(É”¬Éýÿÿÿÿ
