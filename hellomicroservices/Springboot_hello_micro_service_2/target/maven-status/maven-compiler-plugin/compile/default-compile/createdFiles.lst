@@ -1,5 +1,0 @@
-configuration\CommonConfiuration.class
-com\controller\ServiceToServiceController.class
-com\service\DataService.class
-com\model\DataModel.class
-com\ServiceTwoApplication.class
