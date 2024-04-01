@@ -1,6 +1,0 @@
-phong\redis\service\base\impl\BaseRedisServiceImpl.class
-phong\redis\configuration\AppConfiguration.class
-phong\redis\configuration\RedisConfiguration.class
-phong\redis\MainApplication.class
-phong\redis\controller\RedisController.class
-phong\redis\service\base\BaseRedisService.class
