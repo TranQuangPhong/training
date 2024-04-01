@@ -11,4 +11,8 @@ public class ConcreteClass extends BaseClass{
 //        return this.attribute;
         return attribute;
     }
+
+    public void setAttr(int attribute) {
+        this.attribute = attribute;
+    }
 }
