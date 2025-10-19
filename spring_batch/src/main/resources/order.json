@@ -1,0 +1,23 @@
+[
+  {
+    "orderId": "ORD-101",
+    "customer": {
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com"
+    },
+    "items": [
+      {"itemId": "ITM-003", "quantity": 3},
+      {"itemId": "ITM-004", "quantity": 1}
+    ]
+  },
+  {
+    "orderId": "ORD-102",
+    "customer": {
+      "name": "Mike Smith",
+      "email": "mike.smith@example.com"
+    },
+    "items": [
+      {"itemId": "ITM-005", "quantity": 2}
+    ]
+  }
+]
