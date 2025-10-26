@@ -1,0 +1,23 @@
+[
+  {
+    "orderId": "ORD-101-local",
+    "customer": {
+      "name": "Jane Doe - local",
+      "email": "jane.doe@example.com"
+    },
+    "items": [
+      {"itemId": "ITM-003-local", "quantity": 3},
+      {"itemId": "ITM-004-local", "quantity": 1}
+    ]
+  },
+  {
+    "orderId": "ORD-102-local",
+    "customer": {
+      "name": "Mike Smith - local",
+      "email": "mike.smith@example.com"
+    },
+    "items": [
+      {"itemId": "ITM-005-local", "quantity": 2}
+    ]
+  }
+]
