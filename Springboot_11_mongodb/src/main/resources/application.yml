@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: springboot-11-mongodb
+  data:
+    mongodb:
+      database: shopping_app
+      uri: mongodb://localhost:27017,localhost:27018,localhost:27019/?replicaSet=my-replica-set&readPreference=secondaryPreferred
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG

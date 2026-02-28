@@ -25,3 +25,9 @@ springdoc:
   swagger-ui:
     configUrl: /swagger-ui
     path: /index.html
+
+
+rate-limiter:
+  quota: 5
+  window-size-in-millisecond: 20000
+

@@ -1,6 +1,6 @@
 package phong.redis.service.base.impl;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
@@ -13,11 +13,11 @@ import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 @Service
+@Primary
 public class BaseRedisServiceImpl implements BaseRedisService {
 
-    @Autowired
-    RedisTemplate<String, Object> redisTemplate;
-    HashOperations<String, String, Object> hashOperations;
+    protected RedisTemplate<String, Object> redisTemplate;
+    protected HashOperations<String, String, Object> hashOperations;
 
     public BaseRedisServiceImpl(RedisTemplate<String, Object> redisTemplate) {
         this.redisTemplate = redisTemplate;

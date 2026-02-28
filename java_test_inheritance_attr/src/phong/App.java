@@ -5,26 +5,33 @@ public class App {
         BaseClass cl = new ConcreteClass();
         int attr = cl.getAttribute();
         System.out.println("super attr 0 = " + attr);
+        System.out.println("-------------------");
 
         attr = ((ConcreteClass)cl).getAttr();
         System.out.println("concrete attr 0 = " + attr);
+        System.out.println("-------------------");
 
         //Set attr again
         cl.setAttribute(1);
         attr = cl.getAttribute();
         System.out.println("super attr 1 = " + attr);
+        System.out.println("-------------------");
 
         attr = ((ConcreteClass)cl).getAttr();
         System.out.println("concrete attr 1 = " + attr);
+        System.out.println("-------------------");
 
         //Set attr again
         ((ConcreteClass) cl).setAttr(2);
         attr = cl.getAttribute();
         System.out.println("super attr 2 = " + attr);
+        System.out.println("-------------------");
 
         attr = ((ConcreteClass)cl).getAttr();
         System.out.println("concrete attr 2 = " + attr);
+        System.out.println("-------------------");
 
         System.out.println(cl.getClass());
+        System.out.println("-------------------");
     }
 }
