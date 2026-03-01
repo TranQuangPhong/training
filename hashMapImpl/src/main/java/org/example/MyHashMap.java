@@ -30,16 +30,22 @@ public class MyHashMap<K, V> {
             this.next = null;
         }
     }
-
-    private int hash(K key) {
-        return key.hashCode() % capacity;
+    /**
+     * 0x7fffffff ensures hash values are always positive
+     * @param key
+     * @param capacity
+     * @return
+     */
+    private int hash(K key, int capacity) {
+//        return (key.hashCode() & 0x7fffffff) % capacity;
+        return (key.hashCode() & 0x7fffffff) & (capacity - 1); //Use bit AND operator, instead of mod(%) for better performance
     }
 
     public void put(K key, V value) {
         //Assume not null
         if (key == null) return;
 
-        int index = hash(key);
+        int index = hash(key, capacity);
         Entry<K, V> entry = table[index];
 
         while (entry != null) {
@@ -63,10 +69,11 @@ public class MyHashMap<K, V> {
         //Assume not null
         if (key == null) return null;
 
-        int index = hash(key);
+        int index = hash(key, capacity);
         Entry<K, V> entry = table[index];
         while (entry != null) {
             if (entry.key.equals(key)) return entry.value;
+            entry = entry.next;
         }
         return null;
     }
@@ -74,7 +81,7 @@ public class MyHashMap<K, V> {
     public void remove(K key) {
         //Assume not null
         if (key == null) return;
-        int index = hash(key);
+        int index = hash(key, capacity);
         Entry<K, V> entry = table[index];
         Entry<K, V> prev = null;
         while (entry != null) {
@@ -100,7 +107,7 @@ public class MyHashMap<K, V> {
             Entry<K, V> entry = table[i];
             while (entry != null){
                 Entry<K, V> next = entry.next;
-                int newIndex = hash(entry.key);
+                int newIndex = hash(entry.key, newCapacity);
                 //Add to the beginning of newTable[newIndex]
                 entry.next = newTable[newIndex];
                 newTable[newIndex] = entry;
